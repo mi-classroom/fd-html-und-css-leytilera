@@ -1,0 +1,22 @@
+html, body {
+    font-family: source-sans-3 sans-serif;
+    font-weight: var(--fw-normal);
+}
+
+header {
+    background-color: var(--color-white);
+    padding: var(--m);
+}
+
+main {
+    background-color: var(--color-grey);
+}
+
+h2 {
+    font-size: var(--xl);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--m);
+    margin-left: var(--m);
+    padding-top: var(--m);
+}
+

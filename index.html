@@ -4,6 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>ProjectSurvival4All</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/icons.css">
+    <link rel="stylesheet" href="./assets/styles/variables.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/components.css">
 </head>
 
 <body>
@@ -11,7 +17,7 @@
         <h1><img src="./images/p4all.svg" alt="ProjectSurvival4All TH-Köln"></h1>
     </header>
     <main>
-        <section>
+        <section class="welcome">
             <h2>Willkommen</h2>
             <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
                 besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit müglichen
@@ -23,52 +29,69 @@
                 Schau einfach mal vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das nächste
                 Level
                 heben kann.</p>
-                <a href="./pages/about/about-the-project.html">Über das Projekt</a>
+            <a href="./pages/about/about-the-project.html">Über das Projekt</a>
         </section>
         <section>
             <h2>Favoriten</h2>
-            <ul>
+            <ul class="fav-list">
                 <li>
+                    <span class="icon var-icon">description</span>
                     <p>Wie baue ich eine Präsentation auf?</p>
-                    <p>Monika Engelen</p>
+                    <p class="author">Monika Engelen</p>
                 </li>
                 <li>
+                    <span class="icon var-icon">description</span>
                     <p>Wie erstelle ich eine Agenda?</p>
-                    <p>Raphaela Groten</p>
+                    <p class="author">Raphaela Groten</p>
                 </li>
                 <li>
+                    <span class="icon var-icon">smart_display</span>
                     <p>Wie priorisiere ich (ein Backlog)?</p>
-                    <p>Raphaela Groten</p>
+                    <p class="author">Raphaela Groten</p>
                 </li>
                 <li>
+                    <span class="icon var-icon">smart_display</span>
                     <p>Wie halte ich einen Pitch?</p>
-                    <p>Monika Engelen</p>
+                    <p class="author">Monika Engelen</p>
                 </li>
                 <li>
+                    <span class="icon var-icon">description</span>
                     <p>Wie baue ich eine Präsentation auf?</p>
-                    <p>Monika Engelen</p>
+                    <p class="author">Monika Engelen</p>
                 </li>
             </ul>
         </section>
         <section>
             <h2>Von deinem ILU Schreibtisch</h2>
-            <ul>
-                <li>Datenbanken 1</li>
-                <li>Kommunikationstechnik und Netze</li>
-                <li>Paradigmen der Programmierung</li>
-                <li>Audiovisuelles Medienprojekt</li>
-                <li>Grundlagen des Web</li>
-                <li>Screendesign</li>
+            <ul class="fav-list">
+                <li class="has-icon folder-icon">
+                    Datenbanken 1
+                </li>
+                <li class="has-icon folder-icon">
+                    Kommunikationstechnik und Netze
+                </li>
+                <li class="has-icon folder-icon">
+                    Paradigmen der Programmierung
+                </li>
+                <li class="has-icon folder-icon">
+                    Audiovisuelles Medienprojekt
+                </li>
+                <li class="has-icon folder-icon">
+                    Grundlagen des Web
+                </li>
+                <li class="has-icon folder-icon">
+                    Screendesign
+                </li>
             </ul>
         </section>
         <section>
             <h2>Verlauf</h2>
-            <ul>
+            <ul class="hist-list">
                 <li>
                     <img src="./images/rednerin-praesentation.jpg" alt="Rednering Präsentation">
-                    <p>Wie halte ich einen Pitch?</p>
-                    <p>Monika Engelen</p>
-                    <ul>
+                    <p class="card-title">Wie halte ich einen Pitch?</p>
+                    <p class="author">Monika Engelen</p>
+                    <ul class="tag-list">
                         <li>Pitch</li>
                         <li>Startup</li>
                         <li>Überzeugen</li>
@@ -78,9 +101,9 @@
                 </li>
                 <li>
                     <img src="./images/team-arbeit.jpg" alt="Teamarbeit">
-                    <p>Wie arbeite ich im Team?</p>
-                    <p>Monika Engelen</p>
-                    <ul>
+                    <p class="card-title">Wie arbeite ich im Team?</p>
+                    <p class="author">Monika Engelen</p>
+                    <ul class="tag-list">
                         <li>Überzeugen</li>
                         <li>Gruppenarbeit</li>
                         <li>Vortrag</li>
