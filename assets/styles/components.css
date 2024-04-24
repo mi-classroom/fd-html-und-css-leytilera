@@ -68,3 +68,7 @@
 .var-icon {
     font-size: var(--xxl);
 }
+
+.icon-text {
+    display: inline-block;
+}
