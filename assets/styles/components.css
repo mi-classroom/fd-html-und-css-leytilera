@@ -1,11 +1,11 @@
 .welcome {
-    color: var(--color-white);
-    background-color: var(--color-orange);
     padding: var(--m);
+    background-color: var(--color-orange);
+    color: var(--color-white);
 
     h2 {
-        margin-left: 0px;
-        padding-top: 0px;
+        padding-top: 0;
+        margin-left: 0;
     }
 
     p {
@@ -16,16 +16,16 @@
 }
 
 .fav-list li {
+    padding: var(--s);
+    margin: var(--s) var(--m);
     background-color: var(--color-white);
     font-size: var(--l);
-    margin: var(--s);
-    padding: var(--s);
 }
 
 .hist-list {
     li {
+        margin: var(--m);
         background-color: var(--color-white);
-        margin: var(--s);
     }
 
     p {
@@ -40,8 +40,8 @@
 }
 
 .card-title {
-    font-weight: var(--fw-bold);
     font-size: var(--l);
+    font-weight: var(--fw-bold);
 }
 
 .tag-list {
@@ -49,10 +49,10 @@
 
     li {
         display: inline-block;
+        padding: 5px var(--xs);
+        margin: 0;
         background-color: var(--color-grey);
         font-size: var(--s);
-        padding: 5px var(--xs);
-        margin: 0px;
     }
 }
 

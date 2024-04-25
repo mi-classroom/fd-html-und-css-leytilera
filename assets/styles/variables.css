@@ -1,14 +1,12 @@
 :root {
-    --color-white: #ffffff;
-    --color-black: #000000;
+    --color-white: #fff;
+    --color-black: #000;
     --color-grey: #e8e8e8;
     --color-pink: #b62584;
     --color-orange: #ea5b0c;
     --color-red: #c60c0f;
     --color-links: #4285f4;
-
     --ff-icons: material-icons;
-
     --xs: 10px;
     --s: 12px;
     --m: 16px;
@@ -16,7 +14,6 @@
     --xl: 25px;
     --xxl: 31.5px;
     --xxxl: 40px;
-
     --fw-light: 200;
     --fw-normal: 400;
     --fw-bold: 700;

@@ -1,11 +1,11 @@
 html, body {
-    font-family: source-sans-3 sans-serif;
+    font-family: "source-sans-3", sans-serif;
     font-weight: var(--fw-normal);
 }
 
 header {
-    background-color: var(--color-white);
     padding: var(--m);
+    background-color: var(--color-white);
 }
 
 main {
@@ -13,10 +13,10 @@ main {
 }
 
 h2 {
-    font-size: var(--xl);
-    font-weight: var(--fw-bold);
+    padding-top: var(--m);
     margin-bottom: var(--m);
     margin-left: var(--m);
-    padding-top: var(--m);
+    font-size: var(--xl);
+    font-weight: var(--fw-bold);
 }
 
