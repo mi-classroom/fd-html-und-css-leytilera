@@ -1,4 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
 html, body {
+    background-color: var(--color-grey);
     font-family: "source-sans-3", sans-serif;
     font-weight: var(--fw-normal);
 }
@@ -9,7 +14,16 @@ header {
 }
 
 main {
-    background-color: var(--color-grey);
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 90rem;
+    padding: var(--m);
+    margin: 0 auto;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
 }
 
 h2 {

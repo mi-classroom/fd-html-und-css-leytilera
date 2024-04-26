@@ -1,5 +1,6 @@
 .welcome {
     padding: var(--m);
+    margin: var(--s) var(--m);
     background-color: var(--color-orange);
     color: var(--color-white);
 
@@ -15,16 +16,50 @@
 
 }
 
-.fav-list li {
-    padding: var(--s);
+.grid-list {
+    display: grid;
     margin: var(--s) var(--m);
+    gap: var(--m);
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (orientation: portrait) {
+    .inline-list {
+        li {
+            margin: var(--m)
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .inline-list {
+        margin: var(--s) calc(var(--m) - calc(var(--s) / 2));
+
+        li {
+            display: inline-block;
+            margin: calc(var(--s) / 2)
+        }
+    }
+}
+
+.fav-list li {
+    overflow: hidden;
+    padding: var(--s);
     background-color: var(--color-white);
     font-size: var(--l);
+    text-overflow: clip;
+    white-space: nowrap;
+
 }
 
 .hist-list {
+    display: grid;
+    margin: var(--m);
+    gap: var(--m);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
     li {
-        margin: var(--m);
         background-color: var(--color-white);
     }
 
@@ -66,6 +101,7 @@
 }
 
 .var-icon {
+    display: inline-block;
     font-size: var(--xxl);
 }
 
