@@ -161,3 +161,7 @@
     }
 
 }
+
+.menu-button:hover {
+    background-color: var(--color-grey);
+}
