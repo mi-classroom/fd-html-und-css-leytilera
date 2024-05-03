@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProjectSurvival4All – Survival-Tipps für die Projektarbeit - Suche</title>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/fonts.css">
+  <link rel="stylesheet" href="./assets/styles/icons.css">
+  <link rel="stylesheet" href="./assets/styles/variables.css">
+  <link rel="stylesheet" href="./assets/styles/base.css">
+  <link rel="stylesheet" href="./assets/styles/components.css">
+  <script src="./assets/scripts/articlelist.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <section class="filter-section p-m">
+      <h2>Filter</h2>
+      <h3>Projektphasen</h3>
+      <ul class="horizontal-flow" data-js-category="projectphase">
+      </ul>
+      <h3>Schlagwörter</h3>
+      <ul class="horizontal-flow" data-js-category="keywords">
+      </ul>
+      <h3>Deine Module</h3>
+      <ul class="horizontal-flow" data-js-category="modules">
+      </ul>
+      <h3>Dateiformat</h3>
+      <ul class="horizontal-flow" data-js-category="fileFormat">
+      </ul>
+      <div class="filter-section-actionbar">
+        <button class="button button-primary" data-js-filter-reset>Filter löschen</button>
+        <button class="button button-secondary">Filter Anwenden</button>
+      </div>
+    </section>
+    <section class="p-m">
+      <ul class="hist-list" data-js-generate-articlelist>
+      </ul>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

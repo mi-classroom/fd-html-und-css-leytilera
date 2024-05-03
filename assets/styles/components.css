@@ -84,7 +84,7 @@
 
     li {
         display: inline-block;
-        padding: 5px var(--xs);
+        padding: var(--eighth) var(--half);
         margin: 0;
         background-color: var(--color-grey);
         font-size: var(--s);
@@ -123,26 +123,26 @@
     gap: var(--l);
     transform: translateX(-100%);
     transition: transform var(--tr-normal);
-  
-    &.is-active{
-      transform: translateX(0);
+
+    &.is-active {
+        transform: translateX(0);
     }
 }
 
 .header {
     display: flex;
     gap: var(--m);
-  
-    .logo{
-      display: block;
-      flex-grow: 2;
-  
-      img{
-        height: 50px;
-      }
-      
+
+    .logo {
+        display: block;
+        flex-grow: 2;
+
+        img {
+            height: 50px;
+        }
+
     }
-  }
+}
 
 .menu-button {
     border: none;
@@ -169,15 +169,15 @@
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;
-  
-    > * {
-      display: none;
-      grid-column-start: 1;
-      grid-row-start: 1;
-  
-      &.is-active {
-        display: block;
-      }
+
+    >* {
+        display: none;
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+        &.is-active {
+            display: block;
+        }
     }
 }
 
@@ -204,4 +204,62 @@
         background-color: var(--color-grey);
     }
 
+}
+
+.button {
+    padding: var(--half) var(--m);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--tr-normal);
+
+    &[data-state="active"] {
+        font-weight: var(--fw-bold);
+    }
+}
+
+.button-primary {
+    background-color: var(--color-grey);
+
+    &:hover {
+        background-color: var(--color-grey-medium);
+    }
+}
+
+.button-secondary {
+    background-color: var(--color-th-pink);
+    color: var(--color-white);
+
+    &:hover {
+        background-color: var(--color-th-pink-lighter);
+    }
+}
+
+.filter-section {
+    padding: var(--m);
+    margin: var(--m);
+    background-color: var(--color-white);
+
+    .filter-section-actionbar {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: var(--m);
+        gap: var(--xs);
+    }
+
+    h2 {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    h3 {
+        padding-top: var(--m);
+        margin-bottom: var(--quarter);
+        font-weight: var(--fw-bold);
+    }
+}
+
+.horizontal-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--xs);
 }
