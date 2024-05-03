@@ -1,0 +1,26 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #e8e8e8;
+    --color-pink: #b62584;
+    --color-orange: #ea5b0c;
+    --color-red: #c60c0f;
+    --color-links: #4285f4;
+    --color-dark-grey: #686868;
+    --ff-icons: material-icons;
+    --basefont-size: 1rem;
+    --xs: calc(var(--basefont-size) * 0.65);
+    --s: calc(var(--basefont-size) * 0.8);
+    --m: var(--basefont-size);
+    --l: calc(var(--basefont-size) * 1.2);
+    --xl: calc(var(--basefont-size) * 1.4);
+    --xxl: calc(var(--basefont-size) * 1.6);
+    --xxxl: calc(var(--basefont-size) * 1.9);
+    --eighth: calc(var(--m) / 8);
+    --quarter: calc(var(--m) / 4);
+    --half: calc(var(--m) / 2);
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --tr-normal: 0.6s
+}
